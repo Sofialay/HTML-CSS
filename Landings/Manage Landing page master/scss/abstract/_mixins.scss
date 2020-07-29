@@ -1,0 +1,9 @@
+@mixin Buttons ($background, $color) {
+    color: $color;
+    background-color: $background;
+    width: 145px;
+    height: 50px;
+    border-radius: 28px;
+    border: none;
+    font-weight: $fontWeightMedium;
+}

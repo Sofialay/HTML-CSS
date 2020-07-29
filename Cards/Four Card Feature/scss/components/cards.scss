@@ -1,0 +1,62 @@
+main { //mobile first
+    max-width: 315px;
+    .card {
+        margin: 50px 0 30px;
+        width: 300px;
+        height: 200px;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px 10px 20px 30px;
+        box-shadow: 0 2px 15px $grayishBlue;
+        position: relative;
+        h1 {
+            color: $veryDarkBlue;
+        }
+        p {
+            color: $grayishBlue;
+        }
+        img {
+            position: absolute;
+            left: 70%;
+        }
+    }
+    .first {
+        div {
+        @include div-color ($red);
+        }
+    }
+    .second {
+        div {
+        @include div-color ($cyan);
+        }
+    }
+    .third {
+        div {
+            @include div-color ($orange);
+        }
+    }
+    .fourth {
+        div {
+            @include div-color ($blue);
+        }
+    }
+    @media (min-width: 1440px) {
+        max-width: fit-content;
+        display: flex;
+        position: relative;
+        .card {
+            margin: 50px 25px 30px;
+            &:hover {
+                transform: translateY(-20px);
+                transition: transform ease-in-out 0.2s;
+                cursor: pointer;
+            }
+        }
+        .first {
+            margin-top: 10%;
+        }
+        .fourth {
+            margin-top: 10%;
+        }
+    }
+}

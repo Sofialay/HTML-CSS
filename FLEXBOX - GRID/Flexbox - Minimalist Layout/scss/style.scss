@@ -1,0 +1,40 @@
+@import "./abstract/variables";
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    text-align: center;
+    header {
+        margin: 20px;
+        h1 {
+            background: -webkit-linear-gradient(#1d3557, #eee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: letters 3s;
+        }
+        p {
+            font-style: italic;
+            animation: letters 3s;
+        }
+    }
+    main {
+        flex-direction: row;
+        img {
+            width: 250px;
+            height: 200px;
+            filter: blur(1px);
+            cursor: pointer;
+            &:hover {
+                filter: none;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+// Animations
+
+@keyframes letters {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}

@@ -1,0 +1,260 @@
+header {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; }
+  header img {
+    height: 20px; }
+  header nav a {
+    margin-right: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #070439;
+    text-decoration: none; }
+  @media (min-width: 1440px) {
+    header img {
+      margin: 12px;
+      height: 40px; }
+    header nav {
+      margin: 12px; }
+      header nav a {
+        font-size: larger; } }
+
+main {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 40px; }
+  main .layout-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px; }
+    main .layout-1 .img1 img {
+      width: 300;
+      height: 200px; }
+    main .layout-1 .text-part {
+      margin-top: 20px; }
+      main .layout-1 .text-part h2 {
+        color: #070439;
+        font-weight: 700; }
+      main .layout-1 .text-part p {
+        font-weight: 400;
+        color: #070439; }
+      main .layout-1 .text-part form {
+        margin-top: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column; }
+        main .layout-1 .text-part form input {
+          color: #070439;
+          width: 296px;
+          height: 23px;
+          margin-bottom: 10px;
+          outline: none; }
+        main .layout-1 .text-part form button {
+          border-radius: 3px;
+          background-color: #3065f8;
+          color: white;
+          width: 305px;
+          padding: 7px;
+          border: none;
+          cursor: pointer; }
+  main .layout-2 {
+    background-color: #f6f6fe;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px 10px; }
+    main .layout-2 .img2 img {
+      width: 300;
+      height: 200px; }
+    main .layout-2 .text-and-card .text-part {
+      padding: 6px;
+      margin-bottom: 15px; }
+      main .layout-2 .text-and-card .text-part h2 {
+        font-size: 1.3em; }
+      main .layout-2 .text-and-card .text-part p {
+        text-align: initial; }
+      main .layout-2 .text-and-card .text-part a {
+        color: #3c9f8f; }
+    main .layout-2 .text-and-card .card {
+      display: inline-flex;
+      flex-direction: column;
+      background-color: white;
+      height: 200px;
+      width: 280px;
+      border-radius: 3px;
+      padding: 20px;
+      box-shadow: 0 3px 6px #bfbfbf; }
+      main .layout-2 .text-and-card .card img {
+        width: 20px;
+        height: 20px; }
+      main .layout-2 .text-and-card .card p {
+        text-align: initial; }
+      main .layout-2 .text-and-card .card .quote-person {
+        display: flex; }
+        main .layout-2 .text-and-card .card .quote-person .img-testimonial {
+          margin-left: 10px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%; }
+        main .layout-2 .text-and-card .card .quote-person .name {
+          margin-left: 10px;
+          text-align: initial;
+          font-size: 8px;
+          font-weight: 700; }
+          main .layout-2 .text-and-card .card .quote-person .name h2 {
+            margin: 0; }
+          main .layout-2 .text-and-card .card .quote-person .name p {
+            margin: 0; }
+  @media (min-width: 1440px) {
+    main .layout-1 {
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      text-align: initial;
+      padding-bottom: 80px; }
+      main .layout-1 .img1 img {
+        width: 500px;
+        height: 350px; }
+      main .layout-1 .text-part {
+        max-width: 45%; }
+        main .layout-1 .text-part h2 {
+          font-size: 40px; }
+        main .layout-1 .text-part p {
+          font-size: 20px; }
+        main .layout-1 .text-part form {
+          display: block; }
+          main .layout-1 .text-part form input {
+            height: 35px;
+            width: 380px;
+            margin-right: 10px; }
+          main .layout-1 .text-part form button {
+            height: 40px;
+            width: 200px; }
+    main .layout-2 {
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      text-align: initial;
+      padding-bottom: 120px; }
+      main .layout-2 .img2 img {
+        width: 500px;
+        height: 350px; }
+      main .layout-2 .text-and-card {
+        max-width: 51%; }
+        main .layout-2 .text-and-card .text-part h2 {
+          font-size: 40px; }
+        main .layout-2 .text-and-card .text-part p {
+          font-size: 20px; } }
+
+.get-started {
+  font-family: "Open Sans", sans-serif;
+  padding: 70px 30px;
+  background-color: #585989;
+  text-align: center; }
+  .get-started .getstarted-text h2 {
+    color: whitesmoke;
+    margin: 0;
+    font-family: "Raleway", sans-serif; }
+  .get-started .getstarted-text p {
+    color: whitesmoke; }
+  .get-started .input-and-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .get-started .input-and-button input {
+      height: 35px;
+      border: none;
+      border-radius: 3px;
+      width: 250px;
+      margin-bottom: 8px; }
+    .get-started .input-and-button button {
+      height: 35px;
+      border: none;
+      border-radius: 3px;
+      width: 255px;
+      background-color: #3065f8;
+      color: whitesmoke;
+      font-weight: 700;
+      cursor: pointer; }
+  @media (min-width: 1440px) {
+    .get-started {
+      display: flex;
+      justify-content: space-around;
+      text-align: initial; }
+      .get-started .getstarted-text {
+        max-width: 37%; }
+      .get-started .input-and-button {
+        align-items: initial; }
+        .get-started .input-and-button input {
+          width: 400px; }
+        .get-started .input-and-button button {
+          width: 200px; } }
+
+footer {
+  background-color: #070439;
+  padding: 30px;
+  font-family: "Open Sans", sans-serif; }
+  footer .logo-and-contact img {
+    width: 200px; }
+  footer .logo-and-contact .logo-phone {
+    display: flex;
+    color: whitesmoke; }
+    footer .logo-and-contact .logo-phone .fa-phone-volume {
+      margin-right: 5px;
+      margin-top: 17px; }
+  footer .logo-and-contact .logo-mail {
+    display: flex;
+    color: whitesmoke;
+    margin-bottom: 20px; }
+    footer .logo-and-contact .logo-mail .fa-envelope {
+      margin-right: 5px;
+      margin-top: 17px; }
+  footer .links-first-part {
+    display: flex;
+    flex-direction: column; }
+    footer .links-first-part a {
+      color: whitesmoke;
+      text-decoration: none;
+      margin-top: 15px; }
+  footer .links-second-part {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; }
+    footer .links-second-part a {
+      color: whitesmoke;
+      text-decoration: none;
+      margin-top: 15px; }
+  footer .logo-social-media {
+    display: flex;
+    justify-content: center; }
+    footer .logo-social-media .fa-facebook-f {
+      color: whitesmoke;
+      margin: 10px; }
+    footer .logo-social-media .fa-twitter {
+      color: whitesmoke;
+      margin: 10px; }
+    footer .logo-social-media .fa-instagram {
+      color: whitesmoke;
+      margin: 10px; }
+  @media (min-width: 768px) {
+    footer {
+      text-align: center; }
+      footer .logo-phone {
+        justify-content: center; }
+      footer .logo-mail {
+        justify-content: center; } }
+  @media (min-width: 1440px) {
+    footer {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 0;
+      text-align: initial; }
+      footer .links-first-part {
+        margin-top: 5%; }
+      footer .links-second-part {
+        margin-top: 5%; }
+      footer .logo-social-media {
+        margin-top: 5%; } }
+
+body {
+  margin: 0; }

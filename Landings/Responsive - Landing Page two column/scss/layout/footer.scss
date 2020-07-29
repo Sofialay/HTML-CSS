@@ -1,0 +1,87 @@
+footer {
+    background-color: $veryDarkBlue;
+    padding: 30px;
+    font-family: $font-OpenSans;
+    .logo-and-contact {
+        img {
+            width: 200px;
+        }
+        .logo-phone {
+            display: flex;
+            color: whitesmoke;
+            .fa-phone-volume {
+                margin-right: 5px;
+                margin-top: 17px;
+            }
+        }
+        .logo-mail {
+            display: flex;
+            color: whitesmoke;
+            margin-bottom: 20px;
+            .fa-envelope {
+                margin-right: 5px;
+                margin-top: 17px;
+            }
+        }
+    }
+    .links-first-part {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+    }
+    .links-second-part {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+    }
+    .logo-social-media {
+        display: flex;
+        justify-content: center;
+        .fa-facebook-f  {
+            color: whitesmoke;
+            margin: 10px;
+
+        }
+        .fa-twitter {
+            color: whitesmoke;
+            margin: 10px;
+        }
+        .fa-instagram {
+            color: whitesmoke;
+            margin: 10px;
+        }
+    }
+    @media (min-width: 768px) {
+    text-align: center;
+    .logo-phone {
+        justify-content: center;
+    }
+    .logo-mail {
+        justify-content: center;
+        }
+    }
+    @media (min-width: 1440px) {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+        text-align: initial;
+        .links-first-part {
+            margin-top: 5%;
+        }
+        .links-second-part {
+            margin-top: 5%;
+        }
+        .logo-social-media {
+            margin-top: 5%;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+//mobile first
+header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    .responsive-menu {
+        .link-open {
+            font-size: 20px;
+            color: $darkBlue;
+        }
+    #mi-target {
+        background: white;
+        margin-right: 40px;
+        height: 55%;
+        left: -750px;
+        position: fixed;
+        top: 0;
+        transition: left 0.3s linear;
+        box-shadow: 0 1px 12px $darkGrayishBlue;
+        width: 100%;
+        &:target {
+            background-color: white;
+            left: 0; 
+        }
+        .close {
+            display: flex;
+            justify-content: flex-end;
+            margin: 8px;
+            font-size: 30px;
+            color: $darkBlue;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            a {
+                padding: 20px 0;
+                text-decoration: none;
+                color: $darkBlue;
+                font-weight:$fontWeightBold;
+                border-bottom: 2px solid $veryLightGray;
+                &:focus {
+                    background-color: $veryPaleRed;
+                    color: $veryDarkBlue;
+                }
+            }
+        }
+    }
+}
+button {
+    display: none;
+} 
+@media (min-width: 700px) {
+    margin: 20px 10px;
+    .img-logo {
+        margin-right: 25px;
+    }
+    .responsive-menu {
+        .link-open {
+            display: none;
+        }
+        #mi-target {
+            width: 0;
+            height: 0;
+            position: inherit;
+            .close {
+                display: none;
+            }
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .active {
+                    display: none;
+                }
+                a {
+                    margin: 0 5px;
+                    text-decoration: none;
+                    color: $veryDarkBlue;
+                    font-weight: $fontWeightMedium;
+                    padding: 0;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    button {
+        display: block;
+        @include Buttons($brightRed, white);
+    }
+}
+@media (min-width: 1444px) {
+    margin: 30px 40px;
+    .responsive-menu {
+        #mi-target {
+            nav {
+                a {
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+button {
+    @include Buttons($brightRed, white);
+    &:hover {
+        border: 2px solid $brightRed;
+        background-color: white;
+        color: $darkBlue;
+        cursor: pointer;
+    }
+}
+}
+}
+

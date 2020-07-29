@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  background: #F5F7FA;
+  font-family: arial, verdana; }
+
+.login-box {
+  width: 300px;
+  height: 500px;
+  background-color: #F5F7FA;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .login-box h2 {
+    text-align: center;
+    color: #37BC9B;
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: oblique; }
+  .login-box nav {
+    display: flex;
+    justify-content: space-evenly; }
+    .login-box nav img {
+      width: 25px;
+      margin-bottom: 20px;
+      margin-top: 15px;
+      transition: width 0.2s ease-in-out; }
+      .login-box nav img:hover {
+        width: 30px; }
+  .login-box p {
+    color: #9199a5;
+    text-align: center;
+    font-weight: 600;
+    font-size: small; }
+  .login-box form {
+    margin-top: 40px; }
+  .login-box .user-box {
+    display: flex;
+    margin: 20px;
+    flex-direction: column-reverse; }
+    .login-box .user-box input {
+      height: 30px;
+      margin: 5px;
+      padding: 10px;
+      border: none;
+      outline: none; }
+      .login-box .user-box input:focus {
+        transition: border-bottom 0.1s ease-in-out;
+        border-bottom: 2px solid #37BC9B; }
+    .login-box .user-box label {
+      font-size: small;
+      color: #AAB2BD;
+      margin-left: 5px; }
+      
+      .login-box .button {
+        display: flex;
+        justify-content: center; }
+        .login-box .button button {
+          border: none;
+          color: white;
+          font-family: "roboto", sans-serif;
+          font-weight: 600;
+          width: 150px;
+          height: 35px;
+          border-radius: 8px;
+          background-color: #37BC9B;
+          cursor: pointer; }
+          .login-box .button button:hover {
+            transition: 0.3s ease-in-out;
+            background-color: whitesmoke;
+            color: #37BC9B;
+            border: 2px solid #37BC9B; }
+          .login-box .button button:focus {
+            outline: none;
+            transform: scale(0.95); }

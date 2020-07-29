@@ -1,0 +1,14 @@
+@import "./abstract/_mixins.scss";
+@import "./abstract/_variables.scss";
+@import "./components/header.scss";
+@import "./components/cards.scss";
+
+body {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $veryLightGray;
+    font-family: $poppins-font;
+}
+

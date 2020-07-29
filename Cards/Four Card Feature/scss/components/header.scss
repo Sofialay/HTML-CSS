@@ -1,0 +1,35 @@
+header {
+    margin-top: 20px;
+    max-width: 315px;
+    margin-left: 30px;
+    .paragraph1{
+        font-weight: $extra-light;
+        font-size: 1.5em;
+        margin: 5px;
+        color: $grayishBlue;
+    }
+    h2 {
+        margin: 5px;
+        color: $veryDarkBlue;
+    }
+    .paragraph2 {
+        font-weight: $regular;
+        font-size: $font-size;
+        margin: 5px;
+        color: $grayishBlue;
+    }
+    @media (min-width: 1440px) { // Desktop!
+        margin-left: 0;
+        max-width: 520px;
+        text-align: center;
+        .paragraph1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        .paragraph2 {
+            font-size: 1em;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+//hacer todos los tamaños
+
+.hero {
+    .hero-part-1 {
+        img {
+            width: 100%;
+        }
+    }
+    .hero-part-2 {
+        text-align: center;
+        h1 {
+            font-size: 40px;
+            font-weight: $fontWeightBold;
+            color: $darkBlue;
+            margin: 8px;
+        }
+        p {
+            color: $darkGrayishBlue;
+            margin: 0 30px 25px;
+        }
+        button {
+            @include Buttons ($brightRed, white);
+        }
+    }
+}

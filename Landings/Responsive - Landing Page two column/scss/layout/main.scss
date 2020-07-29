@@ -1,0 +1,179 @@
+main {
+    font-family: $font-OpenSans;
+    margin-top: 40px;
+    .layout-1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px
+        ;
+        .img1 {
+            img {
+                width: 300;
+                height: 200px;
+            }
+        }
+        .text-part {
+            margin-top: 20px;
+            h2 {
+               color: $veryDarkBlue;
+               font-weight: $font-bold;
+            }
+            p {
+                font-weight: $font-regular;
+                color: $veryDarkBlue;
+            }
+            form { 
+                margin-top: 20px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                input {
+                    color: $veryDarkBlue;
+                    width: 296px;
+                    height: 23px;
+                    margin-bottom: 10px;
+                    outline: none;
+                }
+                button {
+                 border-radius: 3px;
+                 background-color: $brightBlue;
+                 color: white;
+                 width: 305px; 
+                 padding: 7px;  
+                 border: none;
+                 cursor: pointer;
+                }
+            }
+        }
+    }
+    .layout-2 {
+        background-color: $lightGrayishBlue;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 50px 10px;
+        //.wave-bg {
+            //falta hacer la imagen wave
+        //}
+        .img2 {
+            img {
+                width: 300;
+                height: 200px; 
+            }
+        }
+        .text-and-card{
+            .text-part {
+                padding: 6px;
+                margin-bottom: 15px;
+                h2 {
+                    font-size: 1.3em;
+                }
+                p {
+                    text-align: initial;
+                }
+                a {
+                    color: $moderatCyan;
+                }
+            }
+            .card {
+                display: inline-flex;
+                flex-direction: column;
+                background-color: white;
+                height: 200px;
+                width: 280px;
+                border-radius: 3px;
+                padding: 20px;
+                box-shadow: 0 3px 6px $lightGray;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+                p{
+                    text-align: initial;
+                }
+                .quote-person {
+                    display: flex;
+                    .img-testimonial {
+                        margin-left: 10px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                    .name {
+                        margin-left: 10px;
+                        text-align: initial;
+                        font-size: 8px;
+                        font-weight: $font-bold;
+                        h2 {
+                            margin: 0;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1440px) {
+        .layout-1 {
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            text-align: initial;
+            padding-bottom: 80px;
+            .img1 {
+                img {
+                    width: 500px;
+                    height: 350px;
+                }
+            }
+            .text-part {
+                max-width: 45%;
+                h2 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 20px;
+                }
+                form {
+                    display: block;
+                    input {
+                        height: 35px;
+                        width: 380px;
+                        margin-right: 10px;
+                    }
+                    button {
+                        height: 40px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        .layout-2 {
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            text-align: initial;
+            padding-bottom: 120px;
+            .img2 {
+                img {
+                    width: 500px;
+                    height: 350px;
+                }
+            }
+            .text-and-card {
+                max-width: 51%;
+                .text-part{
+                    h2 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

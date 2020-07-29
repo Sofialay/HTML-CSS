@@ -1,0 +1,77 @@
+@import "./button/button";
+@import "./abstract/variables";
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    background: $superlightgray;
+    font-family: arial, verdana; 
+}
+
+
+.login-box {
+    width: 300px;
+    height: 500px;
+    background-color: $superlightgray;
+    border-radius: 15px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+    box-sizing: border-box;
+    background-image: url(../img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    h2 {
+        text-align: center;
+        color: $green;
+        font-weight: 700;
+        font-size: xx-large;
+        font-style: oblique;
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        img {
+            width: 25px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            transition: width 0.2s ease-in-out;
+            &:hover {
+                width: 30px;
+            }
+        }
+    }
+    p {
+        color: rgb(145, 153, 165);
+        text-align: center;
+        font-weight: 600;
+        font-size: small;
+    }
+    form {
+        margin-top: 40px;
+    }
+    .user-box {
+        display: flex;
+        margin: 20px;
+        flex-direction: column-reverse;
+        input {
+            height: 30px;
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            &:focus {
+                transition: border-bottom 0.1s ease-in-out;
+                border-bottom: 2px solid $green;
+            }
+        }
+        label {
+            font-size: small;
+            color: $lightgray;
+            margin-left: 5px;
+        }
+    }
+}

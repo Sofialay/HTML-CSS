@@ -1,0 +1,10 @@
+@import "./abstract/_mixins";
+@import "./abstract/_variables";
+@import "./layout/header.scss";
+@import "./layout/main.scss";
+@import "./layout/getstarted.scss";
+@import "./layout/footer.scss";
+
+body {
+    margin: 0;
+}

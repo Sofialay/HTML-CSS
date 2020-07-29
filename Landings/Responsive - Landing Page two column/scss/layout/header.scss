@@ -1,0 +1,29 @@
+header {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    img {
+        height: 20px;
+    }
+    nav {
+        a {
+            margin-right: 10px;
+            font-family: $font-Raleway;
+            font-weight: $font-regular;
+            color: $veryDarkBlue;
+            text-decoration: none;
+        }
+    }
+    @media (min-width: 1440px) {
+        img {
+            margin: 12px;
+            height: 40px;
+        }
+        nav {
+            margin: 12px;
+            a {
+            font-size: larger;
+            }
+        }
+    }
+}

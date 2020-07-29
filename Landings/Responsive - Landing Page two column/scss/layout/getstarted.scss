@@ -1,0 +1,51 @@
+.get-started {
+    font-family: $font-OpenSans;
+    padding: 70px 30px;
+    background-color: $desaturatedBlue;
+    text-align: center; 
+    .getstarted-text {
+        h2 {
+            color: whitesmoke;
+            margin: 0;
+            font-family: $font-Raleway;
+        }
+        p {
+        color: whitesmoke;
+        }
+    }
+    .input-and-button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        input { 
+            @include inputAndButton;
+            width: 250px;
+            margin-bottom: 8px;
+        }
+        button { 
+            @include inputAndButton;
+            width: 255px;
+            background-color: $brightBlue;
+            color: whitesmoke;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+    @media (min-width: 1440px) {
+        display: flex;
+        justify-content: space-around;
+        text-align: initial;
+        .getstarted-text {
+            max-width: 37%;
+        }
+        .input-and-button {
+            align-items: initial;
+            input {
+                width: 400px;
+            }
+            button {
+                width: 200px;
+            }
+        }
+    }
+}
